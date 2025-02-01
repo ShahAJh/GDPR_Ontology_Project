@@ -37,6 +37,12 @@ The ontology consists of:
 - `hasProcessingDate` → (Domain: `DataProcessing`, Range: `xsd:dateTime`)
 - `hasBreachDate` → (Domain: `DataBreachNotification`, Range: `xsd:dateTime`)
 
+## Ontology Graph Visualization
+Below is the OntoGraf representation of the GDPR Ontology:
+
+![Ontology Graph](ontology_graph.png)
+
+
 ## Example Instances (Individuals)
 | **Individual** | **Class** | **Relationships / Attributes** |
 |--------------|-----------|-----------------------------|
@@ -45,6 +51,7 @@ The ontology consists of:
 | `CloudServiceProvider` | `DataProcessor` | `processesData → User_Email` |
 | `User_Email` | `PersonalData` | `hasProcessingDate → "2024-01-31T10:00:00"` |
 | `Breach_2025` | `DataBreachNotification` | `hasBreachDate → "2024-01-31T10:00:00"` |
+
 
 ## How to Use the Ontology
 ### **Opening the OWL File in Protégé**
