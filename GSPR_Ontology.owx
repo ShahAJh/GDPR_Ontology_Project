@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/shahj/ontologies/2025/1/untitled-ontology-13"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/shahj/ontologies/2025/1/untitled-ontology-13">
+    <Prefix name="" IRI="http://www.semanticweb.org/shahj/ontologies/2025/1/untitled-ontology-13/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-13" IRI="http://www.semanticweb.org/shahj/ontologies/2025/1/untitled-ontology-13#"/>
+    <Declaration>
+        <Class IRI="#Consent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContractualNecessity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataBreachNotification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataController"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataProcessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSubject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalBasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegitimateInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obligations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightToBeForgotten"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightToDataPortability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensitiveData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ControlsData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notifiesBreach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#processesData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBreachDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcessingDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Breach_2025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CloudServiceProvider"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Consent_Granted"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Google"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LegitimateInterest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RightToBeForgotten"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#User_Email"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Consent"/>
+        <Class IRI="#Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractualNecessity"/>
+        <Class IRI="#LegalBasis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataBreachNotification"/>
+        <Class IRI="#Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataController"/>
+        <Class IRI="#LegalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataProcessor"/>
+        <Class IRI="#LegalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSubject"/>
+        <Class IRI="#LegalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalEntity"/>
+        <Class IRI="#DataProcessor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegitimateInterest"/>
+        <Class IRI="#LegalBasis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightToBeForgotten"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightToDataPortability"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensitiveData"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#DataBreachNotification"/>
+        <NamedIndividual IRI="#Breach_2025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataProcessor"/>
+        <NamedIndividual IRI="#CloudServiceProvider"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Obligations"/>
+        <NamedIndividual IRI="#Consent_Granted"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataController"/>
+        <NamedIndividual IRI="#Google"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LegalBasis"/>
+        <NamedIndividual IRI="#LegitimateInterest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rights"/>
+        <NamedIndividual IRI="#RightToBeForgotten"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataSubject"/>
+        <NamedIndividual IRI="#Shah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalData"/>
+        <NamedIndividual IRI="#User_Email"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#processesData"/>
+        <NamedIndividual IRI="#CloudServiceProvider"/>
+        <NamedIndividual IRI="#User_Email"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ControlsData"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#User_Email"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRight"/>
+        <NamedIndividual IRI="#Shah"/>
+        <NamedIndividual IRI="#RightToBeForgotten"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Google"/>
+        <Literal>&apos;Google&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEmail"/>
+        <NamedIndividual IRI="#Shah"/>
+        <Literal>shahrukh.aleem@studenti.univr.it</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ControlsData"/>
+        <Class IRI="#DataController"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+        <Class IRI="#DataProcessor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRight"/>
+        <Class IRI="#DataSubject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#notifiesBreach"/>
+        <Class IRI="#DataController"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#processesData"/>
+        <Class IRI="#DataProcessor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ControlsData"/>
+        <Class IRI="#LegalBasis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+        <Class IRI="#LegalBasis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRight"/>
+        <Class IRI="#Rights"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#notifiesBreach"/>
+        <Class IRI="#DataBreachNotification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#processesData"/>
+        <Class IRI="#PersonalData"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBreachDate"/>
+        <Class IRI="#DataBreachNotification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEmail"/>
+        <Class IRI="#DataSubject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#LegalEntity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcessingDate"/>
+        <Class IRI="#DataProcessor"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBreachDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcessingDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
